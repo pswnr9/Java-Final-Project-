@@ -1,4 +1,4 @@
-#Comparison Criteria
+**Comparison Criteria**
 1. Language purpose/genesis 
   -Why was the language created?
   -What problems was the language trying to address?
