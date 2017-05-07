@@ -5,22 +5,22 @@
   -Is the language a reaction to a previous language or a replacement for another language?
 
 2. Unique features of the language
-  -Does the language have any partically unique features
+  -Does the language have any particulary unique features
 
 3. Name spaces 
   -How are name spaces implemented?
   -How are name spaces used?
 
 4. Types
-  -What tyeps does the language support?
-  -Are both reference and value tupes supported?
+  -What types does the language support?
+  -Are both reference and value types supported?
   -Can new value types be created?
 
 5. Classes 
   -Defining 
   -Creating new instances
   -Constructing/initializing 
-  -Destructing/de-initalizing
+  -Destructing/de-initializing 
 
 6. Instance reference name in data type (class)
   -this? self?
