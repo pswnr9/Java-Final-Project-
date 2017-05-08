@@ -61,12 +61,14 @@ Namespaces are named program regions used to limit the scope of variables inside
   **-How are name spaces implemented?**<br>
 Swift: In Swift, to access the items in one namespace from the code in another we must first import the module containing the item we wish to access. This is done by using the import declaration keyword followed by the name of the module that we wish to import:
 
-    *code example - complete*  
+[Swift Namespace Example Line 8](https://github.com/pswnr9/Java-Final-Project-/blob/master/Swift/Final%20Project%20Playground%20-%20Swift.playground/Contents.swift)
+
     Syntax: Import ModuleName
  
 Java: Java doesn’t use the term namespace, but there is a similar concept which is used called packages. When creating a package, choose a name for the package and include a package statement along with that name at the top of every source file that contains the classes, interfaces, enums, and annotation types that you want to include in the package.
 
-    *code example - complete*  
+[Java Package Example Line 6](https://github.com/pswnr9/Java-Final-Project-/blob/master/Java/JavaExample.java)
+   
     Syntax: package packageName;
 
   **-How are name spaces used?** <br>
@@ -78,33 +80,39 @@ Java: In Java, a package can be defined as a grouping of related types (classes,
 
 **4. Types** <br>
   **-What types does the language support?** <br>
-  Swift: Swift provides its own versions of all fundamental C and Objective-C types, including Int for integers, Double and Float for floating-point values, Bool for Boolean values, and String for textual data. Swift also provides powerful versions of the three primary collection types, Array, Set, and Dictionary.  
-      
-    
-      *code example - completed*  
+Swift: Swift provides its own versions of all fundamental C and Objective-C types, including Int for integers, Double and Float for floating-point values, Bool for Boolean values, and String for textual data. Swift also provides powerful versions of the three primary collection types, Array, Set, and Dictionary.  
  
 Swift also introduces Optionals type, which handles the absence of a value. They say either there is a value and it equals x or there isn’t a value at all.
 
-    *code example*  
+[Swift Data Types Example Lines 15-35](https://github.com/pswnr9/Java-Final-Project-/blob/master/Swift/Final%20Project%20Playground%20-%20Swift.playground/Contents.swift)
  
 Java: The 8 primitive data types are: Boolean, char, byte, short, int, long, float, double.
  
 All of the other types are reference types; they reference objects and are inherited from the java.lang.Object class. For example, The java.lang.String class represents character strings… and an array is a container object that holds a fixed number of values of a single type. <br>
+
+[Java Data Types Example Lines 27-35](https://github.com/pswnr9/Java-Final-Project-/blob/master/Java/JavaExample.java)
+
   **-Are both reference and value types supported?**<br>
 Swift: Types in Swift fall into one of two categories: value types and reference types.
  
 -Value types: Where each instance keeps a unique copy of its data, usually defined as a struct, enum, or tuple.
+
+[Swift Value Types Example Line 40](https://github.com/pswnr9/Java-Final-Project-/blob/master/Swift/Final%20Project%20Playground%20-%20Swift.playground/Contents.swift)
  
 -Reference Types: Where instances share a single copy of the data, and the type is usually defined as a class.
 
-    *code reference*
+[Swift Reference Types Example Line 50](https://github.com/pswnr9/Java-Final-Project-/blob/master/Swift/Final%20Project%20Playground%20-%20Swift.playground/Contents.swift)
  
 Java: There are two kinds of types in the Java programming language: primitive types and reference types.
  
 -Primitive types: lowercase - Java value types are user-defined primitive types. Predefined by the Java programming language and named by its reserved keyword. The main difference is a primitive type directly contains the value, and the variable of a reference type contains the address of an object that is stored in memory.
  
+[Java Primitive Types Example Line 59](https://github.com/pswnr9/Java-Final-Project-/blob/master/Java/JavaExample.java)
+
 -Reference types: uppercase -  class types that contains pointers to the object stored in memory.
-*code reference* <br>
+
+[Java Reference Types Example Line 53](https://github.com/pswnr9/Java-Final-Project-/blob/master/Java/JavaExample.java) <br>
+
   **-Can new value types be created?**<br>
 Swift: When copying value types, the Swift compiler makes a brand new copy of the original instance. This means all original instance properties are copied into a new one. This process is replicated for each property which is a value type itself. So, when creating multiple copies of a value type object each copy will be a new separate instance with no shared data.
 Java: Similar to Swift, a new copy of the original instance is created to replace the original when making a new value type reference.
@@ -114,13 +122,13 @@ Java: Similar to Swift, a new copy of the original instance is created to replac
 **-Defining**<br>
 Swift: You define a class or a structure in a single file, and the external interface to that class or structure is automatically made available for other code to use.
         
-    *code reference*
+[Swift Defining a Class Example Line 61](https://github.com/pswnr9/Java-Final-Project-/blob/master/Swift/Final%20Project%20Playground%20-%20Swift.playground/Contents.swift)
  
     In Swift there are no abstract classes; a class that provides partial implementation.
         	
 Java: A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.
 
-    *code reference*
+[Java Defining a Class Example Line 18](https://github.com/pswnr9/Java-Final-Project-/blob/master/Java/JavaExample.java)
 
   **-Creating new instances** <br>
   Swift: An instance of a class is traditionally known as an object. However, Swift classes and structures are much closer in functionality than in other languages.
@@ -129,35 +137,37 @@ The main difference is that structs are value types and classes are reference ty
  
 Classes syntax uses the class keyword.
 
-    *code reference*
+[Swift Creating an Instance of a Clsss Example Line 89](https://github.com/pswnr9/Java-Final-Project-/blob/master/Swift/Final%20Project%20Playground%20-%20Swift.playground/Contents.swift)
  
 Java:  In java, the ‘new’ keyword is followed by a call to a constructor. This call initializes the new object.
 
-    *code reference*
+[Java Creating an Instance of a Class Example Line 55](https://github.com/pswnr9/Java-Final-Project-/blob/master/Java/JavaExample.java)
         	
   **-Constructing/initializing** <br>
-  Swift: Initialization is the process of preparing an instance of a class, structure, or enumeration for use. This process involves setting an initial value for each stored property on that instance and performing any other setup or initialization that is required before the new instance is ready for use.
+Swift: Initialization is the process of preparing an instance of a class, structure, or enumeration for use. This process involves setting an initial value for each stored property on that instance and performing any other setup or initialization that is required before the new instance is ready for use.
  
 You implement this by defining initializers, which are special methods that can be called to create a new instance of a particular type. Swift initializers do not return a value. Their primary role is to ensure that new instances of a type are correctly initialized before they are used for the first time.
 
     Structs syntax uses the struct keyword
-    *code reference*
+[Swift Struct Example Line 40](https://github.com/pswnr9/Java-Final-Project-/blob/master/Swift/Final%20Project%20Playground%20-%20Swift.playground/Contents.swift)
  
 In Swift, structures are passed by value not reference. This difference requires a separate annotation for structures to differentiate it.  Initializers are called to create a new instance of a particular type. In its simplest form, an initializer is like an instance method with no parameters, written using the init keyword
 
-    *code reference*
+[Swift Initializer Example Line 70](https://github.com/pswnr9/Java-Final-Project-/blob/master/Swift/Final%20Project%20Playground%20-%20Swift.playground/Contents.swift)
  
 Java:
 In Java, there is no concept of structures.
 Every class has a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a default constructor for that class. (This is unlike Swift where the constructor is no default, but there is a default initializer in Swift). Each time a new object is created, at least one constructor will be invoked. The main rule is they should have the same name as the class.
 
-    *code reference*
+37 42
+[Java Constructor Example Lines 37 & 42](https://github.com/pswnr9/Java-Final-Project-/blob/master/Java/JavaExample.java)
 
   **-Destructing/de-initializing**<br>
 Swift: Instances of class types can also implement deinitializer, which performs any custom cleanup just before an instance of that class is deallocated. Swift automatically deallocates your instances when they are no longer needed, to free up resources. Automatic Reference Counting(ARC) manages the memory.
 You write deinitializers with the deinit keyword, similar to how initializers are written with the init keyword. Deinitializers are only available on class types.
         	
-    *code reference*
+
+[Swift De-Initializer Example Line 79](https://github.com/pswnr9/Java-Final-Project-/blob/master/Swift/Final%20Project%20Playground%20-%20Swift.playground/Contents.swift)
  
 Java: Because Java is a garbage collected language you cannot predict when (or even if) an object will be destroyed. Hence there is no direct equivalent of a destructor.
 
