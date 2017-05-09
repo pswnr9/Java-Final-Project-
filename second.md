@@ -137,8 +137,8 @@ All of the other types are reference types; they reference objects and are inher
 
 Java Data Types:
 ~~~~
- //data types - lowercase are primatives 
- //uppercase (ex: String) are objects
+ /*data types - lowercase are primatives*/
+ /*uppercase (ex: String) are objects*/
     String name;
     int age;
     String breed;
@@ -207,7 +207,7 @@ Java: There are two kinds of types in the Java programming language: primitive t
 Java Primitive Type Example:
 
 ~~~~
- //primative data type example
+ /*primative data type example*/
         char m;
         charexample = 'm';
         m = charexample;
@@ -217,9 +217,8 @@ Java Primitive Type Example:
 
 Java Reference Type Example: 
 ~~~~
-//reference type example - new instance of the class Animals is created called dog
-        Animals dog = new Animals("bob", 5, "lab", true);
-        System.out.print("dog name: "+ dog.name+ "dog age: "+dog.age+"dog breed: "+ dog.breed+"dog gender: "+dog.boy);
+/*reference type example - new instance of the class Animals is created called dog*/
+     Animals dog = new Animals("bob", 5, "lab", true);
 ~~~~
 
   **4.3. Can new value types be created?**<br>
@@ -242,7 +241,7 @@ class Animals{
 Java: A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.
 
 ~~~~
-//defining a class named Animals example 
+/*defining a class named Animals example*/
 public class Animals {
    /*class details go here*/
 }
@@ -263,7 +262,7 @@ var dog = Animals()
 Java:  In java, the ‘new’ keyword is followed by a call to a constructor. This call initializes the new object.
 
 ~~~~
-//creates a new Animals object instance 
+/*creates a new Animals object instance*/
 Animals dog = new Animals();
 ~~~~
         	
