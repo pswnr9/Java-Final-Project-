@@ -518,7 +518,6 @@ public class Tesla: Car {
 
 Inheritance in Swift is very similar to Java. To subclass an object, you add “: superclass” to the end of the first line of your subclass definition. When inheriting a class, you will receive all non-private fields, methods, and nested classes from the class you’re inheriting into your superclass like Java. While in swift, you will also not inherit any initializers (like java with constructors) from your superclass, but you can access them with “super.init”. Swift does not support multiple inheritance.
 
-Swift also supports global functions, which is not possible in Java. 
 
 **10. Reflection** <br>
 In Java, reflection is used through the reflection API to obtain information about a file’s contents at runtime. As far as the API’s abilities go within Java, reflection is mainly used to examine classes and its contents (fields, methods, and constructors), but can also be used to examine methods or interfaces at runtime. An example of using reflection to examine a class is listed below: 
